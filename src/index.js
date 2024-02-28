@@ -1,10 +1,9 @@
 'use strict';
 
-const express = require('express');
-const path = require('path');
-const { createServer } = require('http');
-
-const WebSocket = require('ws');
+import express from 'express';
+import path from 'path';
+import { createServer } from 'http';
+import WebSocket from 'ws';
 
 const app = express();
 app.use(express.static(path.join(__dirname, '/public')));
